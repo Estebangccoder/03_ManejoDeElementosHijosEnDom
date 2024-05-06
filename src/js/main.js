@@ -9,8 +9,8 @@ function createButtonSuccess() {
     const button=document.createElement("button")
    // button.setAttribute("type","button") //enviar el atributo type al elemento button
     button.type = "button" // otra forma de enviar el atributo type al elemento button version moderna
-    button.classList.add("btn", "btn-success")
-    button.textContent = "hello"
+    button.classList.add("btn", "btn-success") //agregamos las clases al elemento button
+    button.textContent = "hello" //agregamos contenido de texto al elemento button
     return button
 }
 
@@ -19,8 +19,8 @@ function createButtonSuccess() {
 boton.addEventListener("click",function() {
 //    alert("Hola")
     const btnResponse=createButtonSuccess()
-    console.log(btnResponse)
-    // main.appendChild(btnResponse) //esta es una forma de insertar con la funcion
+    // console.log(btnResponse)
+    main.appendChild(btnResponse) //esta es una forma de insertar con la funcion
     // main.innerHTML+=`  <button type="button" class="btn btn-primary btn-success">
     //         Hello
     //         </button>
